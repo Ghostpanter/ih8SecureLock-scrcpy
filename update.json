@@ -1,6 +1,6 @@
 {
-  "version": "v10.1-scrcpy",
-  "versionCode": 101,
-  "zipUrl": "https://github.com/Ghostpanter/ih8SecureLock-scrcpy/releases/download/v10.1-scrcpy/ih8SecureLock-scrcpy-v10.1-scrcpy.zip",
+  "version": "v10.2-scrcpy",
+  "versionCode": 102,
+  "zipUrl": "https://github.com/Ghostpanter/ih8SecureLock-scrcpy/releases/download/v10.2-scrcpy/ih8SecureLock-scrcpy-v10.2-scrcpy.zip",
   "changelog": "https://raw.githubusercontent.com/Ghostpanter/ih8SecureLock-scrcpy/main/CHANGELOG.md"
 }

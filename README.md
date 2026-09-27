@@ -30,7 +30,7 @@
 
 1. 打开 **Magisk** → **设置** → 确认 **Zygisk 已开启**。若刚打开，先重启一次。
 2. Magisk → **模块** → **从本地安装** → 选择本仓库 Release 中的  
-   `ih8SecureLock-scrcpy-v10.1-scrcpy.zip`。
+   `ih8SecureLock-scrcpy-v10.2-scrcpy.zip`。
 3. 安装成功后 **重启手机**。
 4. **不要**把需要截图/投屏的 App（以及你的 scrcpy-android 客户端相关进程若在手机上）放入 Magisk **排除列表 / DenyList**；若使用 Shamiko 等，对该 App **关闭 Unmount modules**。
 5. 用 **scrcpy-android**（或电脑端 scrcpy）连接 MI 9，打开原先黑屏的加密/安全界面，确认镜像可见内容。
@@ -52,6 +52,20 @@
 - 本模块 **不 hook system_server**，也 **不 patch services.jar**。
 - 若曾安装 Enable Screenshot（LSPosed）导致无线 ADB 异常：请在 LSPosed 中 **禁用/卸载** 该模块并重启后，再装本 Zygisk 模块。
 - 若仍异常：Magisk 中暂时禁用本模块并重启，对比无线配对是否恢复，以便排查。
+
+## 故障排除
+
+### Magisk 日志：`libc++_shared.so` not found
+
+若出现类似：
+
+```
+zygisk64: Failed to dlopen zygisk module: dlopen failed: library "libc++_shared.so" not found
+```
+
+说明旧版 `.so` 动态依赖了 NDK 的 `libc++_shared.so`，而 Zygisk 注入命名空间里找不到该库。
+
+**v10.2-scrcpy 起** 已改为 **静态链接 libc++**（`-static-libstdc++` / `c++_static`），不再依赖 `libc++_shared.so`。请安装本版本并重启。
 
 ## 卸载
 
