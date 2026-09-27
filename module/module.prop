@@ -1,0 +1,7 @@
+id=ih8SecureLock
+name=ih8SecureLock (scrcpy)
+version=v10.1-scrcpy
+versionCode=101
+author=Ghostpanter (based on j-hc + ziachi)
+description=Zygisk: disable FLAG_SECURE for screenshots/scrcpy. Hooks relayout + addToDisplay. No LSPosed. Avoids system_server hooks to reduce ADB side-effects.
+updateJson=https://raw.githubusercontent.com/Ghostpanter/ih8SecureLock-scrcpy/main/update.json

@@ -1,0 +1,4 @@
+This Magisk Zygisk module is a derivative work based on:
+  - j-hc/ih8SecureLock (Apache-2.0) https://github.com/j-hc/ih8SecureLock
+  - ziachi/ih8SecureLock (Apache-2.0) https://github.com/ziachi/ih8SecureLock
+Modifications by Ghostpanter: merge addToDisplay hooks into j-hc v10, Chinese docs, Magisk packaging for scrcpy on HyperOS.

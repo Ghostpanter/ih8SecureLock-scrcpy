@@ -1,0 +1,4 @@
+out/stage/
+out/zygisk/
+*.o
+.idea/
